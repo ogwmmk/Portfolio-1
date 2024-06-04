@@ -1,0 +1,22 @@
+.p-hero{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 40px;
+
+}
+
+.p-hero_img1{
+    width: 560px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.p-hero_img2{
+    margin-top: 100px;
+    width: 560px;
+    height: 500px;
+    object-fit: cover;
+
+}
