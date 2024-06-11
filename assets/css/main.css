@@ -333,7 +333,6 @@
     margin: 50px 0 0 auto;
     width: 100px;
     height: 23px;
-
     border-bottom: 1px solid black;
 
 }
@@ -359,4 +358,74 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 0;
+}
+
+
+.report_content{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.report_subTitle{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing : 6px;
+    line-height:1.8;
+
+}
+
+.report_text{
+    margin-left: 30px;
+    font-size: 13px;
+    letter-spacing : 1.5px;
+    line-height:2;
+}
+
+
+
+.report_moreBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+
+}
+.report_more{
+    font-size: 12px;
+}
+
+.report_post{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.report_item{
+    
+}
+.report_img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.report_tag{
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #fff;
+}
+.report_ttl{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing : 1.5px;
+    line-height:2;
+}
+.report_day{
+    font-size: 13px;
+    letter-spacing : 1.5px;
+    line-height:2;
 }
