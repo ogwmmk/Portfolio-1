@@ -405,27 +405,150 @@
 }
 
 .report_item{
-    
+    width : calc(100% / 3) ;
 }
 .report_img{
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 190px;
     object-fit: cover;
-    
+
 }
-.report_tag{
-    font-size: 13px;
-    font-weight: bold;
+
+.report_tagBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -20px;
+    margin-left: 5px; */
+
+    width: 130px;
+    height: 38px;
     background-color: #fff;
 }
+.report_tag{
+
+    /* width: 120px; */
+    /* height: 25px; */
+    /* padding: 5px 5px; */
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing : 1px;
+
+}
 .report_ttl{
-    font-size: 18px;
+    margin-bottom: 0;
+    font-size: 17px;
     font-weight: bold;
     letter-spacing : 1.5px;
     line-height:2;
+    word-break:break-all
+
 }
 .report_day{
-    font-size: 13px;
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: bold;
     letter-spacing : 1.5px;
     line-height:2;
+    color: #777;
+}
+
+/* online shop */
+
+.onlineShop{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.onlineShop_container{
+    width: 350px;
+
+}
+
+.onlineShop_title{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing : 2px;
+    line-height:1.8;
+
+}
+
+.onlineShop_subTitle{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing : 2px;
+    line-height:1.8;
+
+}
+
+.onlineShop_text{
+    font-size: 13px;
+    letter-spacing : 1.1px;
+    line-height:2;
+
+}
+
+.onlineShop_box{
+    margin-left: auto;
+    margin-top: 60px;
+    width: 120px;
+    height: 23px;
+    border-bottom: 1px solid black;
+
+}
+
+
+.onlineShop_more{
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing : 1px;
+    /* line-height:2; */
+
+}
+
+
+.onlineShop_img1{
+    margin-top: 70px;
+    margin-left:55px;
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.onlineShop_img2{
+    margin-left: auto;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+/* message */
+
+.message{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../../assets/img/deco.png");
+    background-size: 40%;
+}
+
+.message_title{
+    /* margin: 0 auto; */
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+}
+
+.message_text{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
 }
