@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
     <title>旅する喫茶</title>
   </head>
@@ -14,19 +16,39 @@
         <div class="header">
 
         <div class="header_logo">
-            <h1 class="headar_title">旅する喫茶</h1>
+            <h1 class="headar_title point">旅する喫茶</h1>
             <a class="headar_subtatle">TABI SURU KISSA</a>
         </div>
-        <nav class="headar_nav">
-            <ul class="header_list">
-                <li class="header_text">ABOUT US</li>
-                <li class="header_text">NEWS</li>
-                <li class="header_text">REPORT</li>
-                <li class="header_text">COMPANY</li>
-                <li class="header_text">CONTACT</li>
-                <li class="header_text">ONLINE SHOP</li>
-                <li><img class="header_icon" src="assets/img/x_icon.png" alt="X"></li>
-                <li><img class="header_icon" src="assets/img/instagram_icon.png" alt="instagram"></li>
+        <nav id="nav">
+            <ul class="header_list ff_20">
+                <li>
+                    <a class="header_text" href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">NEWS</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">REPORT</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">COMPANY</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">ONLINE SHOP</a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">
+                    <img class="header_icon" src="assets/img/x_icon.png" alt="X">
+                    </a>
+                </li>
+                <li>
+                    <a class="header_text" href="#">
+                    <img class="header_icon" src="assets/img/instagram_icon.png" alt="instagram">
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -56,7 +78,7 @@
                 <p class="info_text ff_mi">東京・高円寺にて旅の拠点となる喫茶店を開店しました。<br>
                     皆様のご来店を心よりお待ちしております。</p>
                     <p class="info_text2 ff_mi">※土日祝の営業は、事前のオンライン順番受付も可能です。<br>
-                    ※営業に関する詳しい情報は公式Xをご確認ください。</p>
+                    ※営業に関する詳しい情報は<a href="#" class="info_x">公式X</a>をご確認ください。</p>
 
                 <div class="info_storeInfo">
                 <p class="info_title">STORE INFO</p>
@@ -83,9 +105,9 @@
 
         <div class="news mg-main">
             <div class="news_container">
-                <h3 class="news_title">News & Blog</h3>
+                <h3 class="news_title ff_en">News & Blog</h3>
                 <div class="news_moreBox">
-                <a class="news_more">VIEW MORE</a>
+                <a class="news_more" href="#">VIEW MORE</a>
             </div>
             </div>
             <ul class="news_menu">
@@ -123,7 +145,7 @@
             </div>
 
             <div class="about_profile">
-                <h2 class="about_title">About us</h2>
+                <h2 class="about_title ff_en">About us</h2>
                 <p class="about_subTitle ff_mi">私たちについて</p>
                 <p class="about_text ff_mi">「カレーとクリームソーダって相性いいんじゃない？」そんな一言をきっかけに、それぞれが趣味だった玉置とtsunekawaの2人で『旅する喫茶』を開始。2019年4月から今までの1年半で、北海道から沖縄までの13都道府県、22ヶ所で開催してきました。</p>
                 <div class="about_box">
@@ -134,12 +156,12 @@
 
         <div class="report">
             <div class="report_container mg-main">
-                <h2 class="report_title">Report</h2>
+                <h2 class="report_title ff_en">Report</h2>
                 <div class="report_content">
                     <p class="report_subTitle ff_mi">旅する喫茶の記録</p>
                     <p class="report_text ff_mi">これまでの私たちの旅の軌跡です。</p>
                     <div class="report_moreBox">
-                        <p class="report_more">VIEW MORE</p>
+                        <a class="report_more" href="#">VIEW MORE</a>
                     </div>
                 </div>
                 <div class="report_post">
@@ -217,14 +239,14 @@
                         </div>
                     </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="onlineShop mg-main">
             <div class="onlineShop_container">
-                <h2 class="onlineShop_title">ONLINE SHOP</h2>
+                <h2 class="onlineShop_title ff_en">ONLINE SHOP</h2>
                     <p class="onlineShop_subTitle ff_mi">すてきな場所で、すてきな時間を</p>
                     <p class="onlineShop_text ff_mi">お気に入りの場所で過ごす時間が、いつもより少し特別なものになりますように。旅する喫茶がプロデュースするオリジナルグッズのオンラインストアです。</p>
                     <div class="onlineShop_box">
@@ -237,7 +259,7 @@
             </div>
         </div>
         <div class="message">
-            <p class="message_title">Where to go next..?</p>
+            <p class="message_title ff_en">Where to go next..?</p>
             <p class="message_text ff_mi">私たちはこれからも旅を続けます。</p>
         </div>
 
@@ -246,11 +268,11 @@
         <div class="contact">
             <div class="contact_logo">
                 <div class="contact_img"></div>
-            <div class="contact_box">
+            <a href="#" class="contact_box">
                 <p class="contact_title">Contact</p>
                 <p class="contact_text ff_mi">旅する喫茶へのお問い合わせはこちらから</p>
-                <a href="#" class="contact_btn"></a>
-            </div>
+                <p class="contact_btn"></p>
+            </a>
         </div>
 
         </div>
@@ -262,28 +284,32 @@
                 <div class="footer_content">
                     <div class="footer_hp">
                         <img class="footer_icon" src="assets/img/link.png" alt="公式サイト">
-                        <p class="footer_text">旅する喫茶 公式サイト</p>
+                        <a class="footer_text" href="#">旅する喫茶 公式サイト</a>
                     </div>
                     <div class="footer_sns">
+                        <div class="footer_instagram">
                         <img class="footer_icon" src="assets/img/instagram_white.png" alt="instagram">
-                        <p class="footer_text">公式instagram</p>
+                        <a class="footer_text" href="#">公式instagram</a>
+                        </div>
                         <p class="logo">/</p>
+                        <div class="footer_x">
                         <img class="footer_icon" src="assets/img/x-white.png" alt="x">
-                        <p class="footer_text">公式X</p>
+                        <a class="footer_text" href="#">公式X</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="footer_content">
                     <div class="footer_hp">
                         <img class="footer_icon" src="assets/img/link.png" alt="公式サイト">
-                        <p class="footer_text">旅する喫茶うきは 公式サイト</p>
+                        <a class="footer_text" href="#">旅する喫茶うきは 公式サイト</a>
                     </div>
                     <div class="footer_sns">
                     <img class="footer_icon" src="assets/img/instagram_white.png" alt="instagram">
-                    <p class="footer_text">公式instagram</p>
+                    <a class="footer_text" href="#">公式instagram</a>
                     <p class="logo">/</p>
                         <img class="footer_icon" src="assets/img/x-white.png" alt="x">
-                        <p class="footer_text">公式X</p>
+                        <a class="footer_text" href="#">公式X</a>
                     </div>
                 </div>
             </div>
@@ -291,15 +317,22 @@
 
         <div class="bottom">
             <div class="bottom_container">
-            <img class="bottom_img" src="assets/img/x_icon.png" alt="旅する喫茶">
+            <a class="bottom_logo" href="#">
+                <img class="bottom_img" src="assets/img/x_icon.png" alt="旅する喫茶">
+            </a>
+
             </div>
             <div class="copyright">
-                <p class="copyright_text">Copyright - all rights reversed.</p>
+                <p class="copyright_text">Copyright -</p>
+                <a class="copyright_text2" href="#">all rights reversed.</a>
                 <p class="copyright_logo">/</p>
-                <p class="copyright_text">Direction and design - Walnut.</p>
+                <p class="copyright_text">Direction and design -</p>
+                <a class="copyright_text2" href="#">Walnut.</a>
 
             </div>
         </div>
     </div>
+
+
   </body>
 </html>
