@@ -57,13 +57,16 @@ body {
 .headar_title{
     font-weight: lighter;
     margin: 0 auto;
-    font-family: '游明朝体+36ポかな','YuMincho +36p Kana',sans-serif;
+    font-family: 'klee',sans-serif;
 
 }
+
 .headar_subtatle{
     font-family: 'Avenir Next',sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     margin: 0 auto;
+    letter-spacing : 1.7px;
+
 }
 
 
@@ -337,7 +340,14 @@ body {
     align-items: center;
     font-size: 13px;
     line-height:1.5;
+    transition: all 0.3s ease 0s;
 }
+
+.news_list:hover{
+    opacity: 0.6;
+}
+
+
 .news_day{
     letter-spacing : 1px;
     font-weight: bold
@@ -366,12 +376,10 @@ body {
 }
 
 .about_container{
-    /* display: inline-block; */
     position: relative;
     width: 2400px;
     height: 500px;
     margin-right: 60px;
-    /* background-color: aquamarine; */
 }
 
 
@@ -381,14 +389,11 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
-
     width: 250px;
     height: 200px;
-
 }
 
 .about_img2{
-    /* display: block; */
     position: absolute;
     top: 45%;
     left:6%;
@@ -398,24 +403,16 @@ body {
     object-position: 60%;
 }
 
-.about_logo2{
-
-}
-
 
 .about_img3{
     position: absolute;
     top: 10%;
     right: 0;
     object-fit: cover;
-
     width: 230px;
     height: 280px;
 }
 
-.about_profile{
-
-}
 
 .about_title{
     margin-top: 20px;
@@ -440,26 +437,45 @@ body {
 }
 
 .about_box{
-    margin: 50px 0 0 auto;
-    width: 100px;
-    height: 23px;
-    border-bottom: 1px solid black;
-    transition: all 0.3s ease 0s;
+    margin-top: 50px;
 }
 
-
-.about_box:hover{
-    opacity: 0.6;
-    width: 80px;
-}
 
 .about_more{
-    margin: 0;
+    text-align: right;
+    display: block;
+}
+
+.about_moreText{
+    position: relative;
+    padding-right: 35px;
+    padding-bottom: 7px;
     font-weight: bold;
     font-size: 12px;
     letter-spacing : 1px;
-    /* line-height:2; */
+    text-decoration: none;
+    color: black;
 }
+
+.about_moreText::after{
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease 0s;
+}
+
+.about_moreText:hover{
+    opacity: 0.6;
+}
+
+.about_moreText:hover::after{
+    width: 80%;
+}
+
 
 
 /* report */
@@ -529,31 +545,51 @@ body {
 }
 
 .report_items{
-    /* padding: 0 20px; */
     width : calc(100% / 3) ;
+    justify-content: space-between;
 }
 .report_item{
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    padding-right: 20px;
     /* width : calc(100% / 3) ; */
 }
+
+
+.report_item:hover{
+    opacity: 0.6;
+}
+.report_imgBox{
+    overflow: hidden;
+
+}
+
 .report_img{
-    width: 280px;
-    height: 190px;
+    width: 100%;
+    /* height: 190px; */
     object-fit: cover;
+    height: auto;
+    transition: transform .6s ease;
+}
+
+.report_img:hover{
+    transform: scale(1.1);
 }
 
 .report_txt{
     margin-top: -25px;
+    text-align: right;
 }
 
     .report_tagBox{
     display: inline-block;
-    margin-left: 140px;
+    margin-right: 10px;
     background-color: #fff;
+
 }
 
 .report_tag{
-    margin: 0;
+    margin: 0 0 0 auto;
+    /* margin: 0; */
     padding: 10px 10px;
     font-size: 13px;
     font-weight: bold;
@@ -561,6 +597,7 @@ body {
 
 }
 .report_ttl{
+    text-align: left;
     font-family: YuGothic,'Yu Gothic',sans-serif;
     margin-bottom: 0;
     font-size: 17px;
@@ -572,6 +609,7 @@ body {
 
 .report_day{
     margin-top: 5px;
+    text-align: left;
     font-size: 11px;
     font-weight: bold;
     letter-spacing : 1.5px;
@@ -598,8 +636,6 @@ body {
     letter-spacing : 2px;
     line-height:1.8;
     font-family: 'Helvetica Neue',sans-serif;
-
-
 }
 
 .onlineShop_subTitle{
@@ -607,34 +643,57 @@ body {
     font-weight: bold;
     letter-spacing : 2px;
     line-height:1.8;
-
 }
 
 .onlineShop_text{
     font-size: 13px;
     letter-spacing : 1.1px;
     line-height:2;
-
 }
 
 .onlineShop_box{
-    margin-left: auto;
-    margin-top: 60px;
-    width: 120px;
-    height: 23px;
-    border-bottom: 1px solid black;
-
+    margin-top: 50px;
 }
 
-
 .onlineShop_more{
-    margin: 0;
+    text-align: right;
+    display: block;
+}
+
+.onlineShop_moreText{
+    position: relative;
+    padding-right: 35px;
+    padding-bottom: 7px;
     font-weight: bold;
     font-size: 12px;
     letter-spacing : 1px;
-    /* line-height:2; */
+    text-decoration: none;
+    color: black;
 
 }
+
+.onlineShop_moreText::after{
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease 0s;
+}
+
+.onlineShop_moreText:hover{
+    opacity: 0.6;
+}
+
+.onlineShop_moreText:hover::after{
+    width: 80%;
+}
+
+
+
+
 
 
 .onlineShop_img1{
